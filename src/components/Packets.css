@@ -1,0 +1,29 @@
+@keyframes loading {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  animation: loading 2s linear infinite;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: transparent thick solid;
+  border-top-color: var(--blue);
+  border-radius: 50%;
+}
+
+.error {
+  color: var(--pink);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
