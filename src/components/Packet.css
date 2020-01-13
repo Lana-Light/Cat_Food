@@ -1,5 +1,4 @@
 .card {
-  width: 320px;
   margin-left: 40px;
   margin-right: 40px;
   font-family: "Trebuchet MS";
@@ -35,6 +34,7 @@
 
 .packet {
   position: relative;
+  width: 320px;
   height: 480px;
   border-radius: 0 12px 12px 12px;
   color: var(--darkGrey);
@@ -49,6 +49,7 @@
   width: 280px;
   margin-left: auto;
   padding-top: 16px;
+  padding-left: 4px;
   border-top: 4px solid var(--blue);
   border-right: 4px solid var(--blue);
   border-radius: 0 12px 0 0;
@@ -233,4 +234,11 @@
 .mass__val {
   font-size: 42px;
   line-height: 44px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
